@@ -1,0 +1,48 @@
+{
+  "name": "drv.js",
+  "version": "0.1.0",
+  "authors": [
+    "Pandao <272383090@qq.com>"
+  ],
+  "description": "The Combined Type JavaScript MVVM / MVC / SPA Development Framework, Based on Director.js, Require.js and Vue.js.",
+  "main": "index.js",
+  "keywords": [
+    "mvvm",
+    "mvc",
+    "vue",
+    "javascript framework",
+    "framework",
+    "director",
+    "router",
+    "controller",
+    "require.js",
+    "webapp",
+    "drv.js",
+    "drv"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "app",
+    "node_modules",
+    "bower_components",
+    "demo",
+    ".idea/",
+    "backup",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "director": "~1.2.8",
+    "requirejs": "~2.1.18",
+    "vue": "~0.12.1",
+    "vue-touch": "~0.1.1",
+    "vue-validator": "~1.0.6",
+    "jquery": "~2.1.4",
+    "requirejs-text": "~2.0.14",
+    "underscore": "~1.8.3",
+    "httpx.js": "~0.2.0",
+    "require-css": "~0.1.8",
+    "tiletemplate": "~1.5.0"
+  }
+}

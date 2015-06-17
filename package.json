@@ -1,0 +1,50 @@
+{
+  "name": "drv.js",
+  "version": "0.1.0",
+  "description": "The Combined Type JavaScript MVVM / MVC / SPA Development Framework, Based on Director.js, Require.js and Vue.js.",
+  "main": "src/drv.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pandao/drv.js.git"
+  },
+  "keywords": [
+    "mvvm",
+    "mvc",
+    "vue",
+    "javascript framework",
+    "framework",
+    "director",
+    "router",
+    "controller",
+    "require.js",
+    "webapp",
+    "drv.js",
+    "drv"
+  ],
+  "author": "Pandao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pandao/drv.js/issues"
+  },
+  "homepage": "https://github.com/pandao/drv.js",
+  "devDependencies": {
+    "dateformatter": "^0.1.0",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.4.2",
+    "gulp-header": "^1.2.2",
+    "gulp-jshint": "^1.9.0",
+    "gulp-notify": "^2.1.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-replace": "^0.5.3",
+    "gulp-uglify": "^1.2.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-util": "^3.0.1"
+  }
+}
