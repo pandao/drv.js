@@ -50,6 +50,8 @@
         
         return dest;
     }
+    
+    "use strict";
 
     /**
      * Add event listener
