@@ -29,8 +29,6 @@
     
 })(function() {
     
-    "use strict";
-    
     /**
      * Object extention
      * 
@@ -184,7 +182,7 @@
      */
     
     var $defaults = {
-        path            : location.pathname, // Application basic path
+        path            : "./",              // Application basic path
         cssPath         : "css/",
         viewPath        : "views/",
         libPath         : "lib/",
@@ -198,7 +196,7 @@
         requireConfigs  : {
             urlArgs     : "",
             waitSeconds : 60,
-            baseUrl     : location.pathname,
+            baseUrl     : "./",
             paths       : {
                 vue          : bowerPath + "vue/dist/vue.min",
                 hammerjs     : bowerPath + "hammerjs/hammer.min",
