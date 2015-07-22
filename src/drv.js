@@ -128,7 +128,7 @@
     var Drv            = {};
 
     Drv.name           = "Drv.js";
-    Drv.version        = "0.1.0";
+    Drv.version        = "0.1.1";
     Drv.homePage       = "https://github.com/pandao/drv.js";
     Drv.description    = "The Combined Type JavaScript MVVM / MVC / SPA Development Framework, Based on Director.js, Require.js and Vue.js.";    
     Drv.http           = null;
@@ -182,7 +182,7 @@
         useHistory      : false,             // Using HTML5 History API for Director.js 
         bowerPath       : bowerPath,
         controllerPath  : "controllers/",
-        directorConfigs : null,
+        directorConfigs : {},
         requireConfigs  : {
             urlArgs     : "",
             waitSeconds : 60,
@@ -510,8 +510,8 @@
             notfound     : this.notFound
         };
 
-        directorConfigs = (settings.directorConfigs) ? settings.directorConfigs : directorConfigs;
-
+        directorConfigs = extend(directorConfigs, settings.directorConfigs);
+        
         this.router.configure(directorConfigs).init(settings.routeInit);
 
         this.trigger("run.after");
