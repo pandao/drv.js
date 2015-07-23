@@ -60,7 +60,9 @@ main.js :
 ```javascript
 define(["./configs/routes"], function(routes) {
     var app = Drv.App(); // or Drv.App({your-configs ...});
-    app.run(routes);
+    app.run(routes, function() {
+        console.log(this);
+    });
 });
 ```
 

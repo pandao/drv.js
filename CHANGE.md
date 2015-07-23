@@ -11,3 +11,7 @@ Basic MVVM / MVC functionality.
 fix bugs:
 
 - About `settings.directorConfigs`;
+
+#### v0.1.2
+
+- `app.run()` added `callback` parameter;

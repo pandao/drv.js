@@ -128,7 +128,7 @@
     var Drv            = {};
 
     Drv.name           = "Drv.js";
-    Drv.version        = "0.1.1";
+    Drv.version        = "0.1.2";
     Drv.homePage       = "https://github.com/pandao/drv.js";
     Drv.description    = "The Combined Type JavaScript MVVM / MVC / SPA Development Framework, Based on Director.js, Require.js and Vue.js.";    
     Drv.http           = null;
@@ -514,17 +514,25 @@
         
         this.router.configure(directorConfigs).init(settings.routeInit);
 
+        this.runCallback.bind(this)(Vue, httpx);
+
+        this.runCallback = null;
+
+        delete this.runCallback;
+
         this.trigger("run.after");
     }
     
     /**
      * Drv.App bootstrap
      * 
-     * @param   {Object}  routes    Routes object
-     * @returns {Object}  Drv.App   Drv.App instance object
+     * @param   {Object}    routes     Routes object
+     * @param   {Function}  callback   Callback function
+     * @returns {Object}    Drv.App    Drv.App instance object
      */
 
-    DrvApp.prototype.run = function(routes) {
+    DrvApp.prototype.run = function(routes, callback) {
+        callback = callback || function() {};
 
         this.trigger("run.before");
 
@@ -532,6 +540,7 @@
 
         this.$data           = {};
         this.settings.routes = routes;
+        this.runCallback     = callback;
 
         require(["director", "vue", "httpx"], requireMain.bind(this));
         

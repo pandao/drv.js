@@ -1,6 +1,6 @@
 {
   "name": "drv.js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "The Combined Type JavaScript MVVM / MVC / SPA Development Framework, Based on Director.js, Require.js and Vue.js.",
   "main": "src/drv.js",
   "directories": {
